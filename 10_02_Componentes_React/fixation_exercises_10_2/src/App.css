@@ -1,0 +1,34 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+div[class^="exercise"] {
+  border: solid 1px black ;
+  width: 80vw;
+  max-width: 600px;
+  margin:40px auto;
+  padding: 20px;
+
+}
+.prop-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  object-position: left;
+}
+
+.discos {
+  width: 80vw;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+}
+
+.discos img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+}
