@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "produto": "Sabonete líquido",
+    "Linha": "Linha banho",
+    "preco": "39,9",
+    "destaque": "Feito à mão para o cuidar da sua pele diáriamente.",
+    "descricao": "Perfumes de PITANGA, exuberante e cítrico, também tem o de ALGAS que vai ter transportar para um pôr do sol na praia..",
+    "img": "https://raw.githubusercontent.com/severidade/trybe_exercises_front_end/exercicios/10.2/10_02_Componentes_React/bem-dito-app/src/img/produtos/saboneteliquido.jpg"
+  },
+  {
+    "id": 2,
+    "produto": "Desodorante",
+    "Linha": "Linha corpo",
+    "preco": 20,
+    "destaque": "No verão, surge a necessidade de reaplicar o desodorante ao decorrer do dia.",
+    "descricao": "Aposte no Desodorante Bem.Dito que entrega hidratação e ação calmante para a pele, ao mesmo tempo que absorve a umidade excessiva sem ingredientes agressivos.",
+    "img": "https://raw.githubusercontent.com/severidade/trybe_exercises_front_end/exercicios/10.2/10_02_Componentes_React/bem-dito-app/src/img/produtos/desodorante.jpg"
+  },
+  {
+    "id": 3,
+    "produto": "Difusores de ambiente",
+    "Linha": "Linha Casa",
+    "preco": 50,
+    "destaque": "Aromaterapia em casa!",
+    "descricao": "Os difusores de ambiente vão perfumar o seu lar com aromas marcantes. Tudo isso fica ainda mais potente se virar as varetas diariamente, assim elas proporcionam uma sensação de bem-estar e carinho por todos os ambientes.",
+    "img": "https://raw.githubusercontent.com/severidade/trybe_exercises_front_end/exercicios/10.2/10_02_Componentes_React/bem-dito-app/src/img/produtos/difusor.jpg"
+  },
+  {
+    "id": 4,
+    "produto": "Creme Hidratante",
+    "Linha": "Linha corpo",
+    "preco": 35,
+    "destaque": "Ele está de volta!",
+    "descricao": "Agora com cheirinho de amêndoas e extratos naturais de aloe vera, o Creme Hidratante em potinho de 100g é ideal para os cuidados com a sua pele no pós-banho. Ele espalha facilmente e fica com toque sequinho, vc já se cuidou hoje?",
+    "img": "https://raw.githubusercontent.com/severidade/trybe_exercises_front_end/exercicios/10.2/10_02_Componentes_React/bem-dito-app/src/img/produtos/hidratante.jpg"
+  }
+]
