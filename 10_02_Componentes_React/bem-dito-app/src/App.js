@@ -1,12 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import Products from './componentes/Procucts';
 import './App.css';
 
-function App() {
-  return (
-    <>
-     <h1>Bem dito</h1>
-    </>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <>
+       <h1>Bem dito</h1>
+       <Products />
+      </>
+    );
+  }
 }
 
 export default App;

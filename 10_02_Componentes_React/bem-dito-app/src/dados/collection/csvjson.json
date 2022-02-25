@@ -36,3 +36,6 @@
     "img": "https://raw.githubusercontent.com/severidade/trybe_exercises_front_end/exercicios/10.2/10_02_Componentes_React/bem-dito-app/src/img/produtos/hidratante.jpg"
   }
 ]
+
+// Esse objeto foi gerado no site https://csvjson.com/ com base na planinha do google exportada em formato csv
+//
