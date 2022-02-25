@@ -19,7 +19,7 @@ class Products extends Component {
                 <div className="main-content">
                   <div className="highlight_info"> {` ${item.highlight_info}`} </div>
                   <div className="product_info"> {` ${item.product_info}`} </div>
-                  <img className="product_picuture" src={`${item.src}`} alt={`${item.product}`}/>
+                  <img className="product_picuture" src={`${item.model}`} alt={`${item.product}`}/>
                   {/* <a href="#" class="add_cart">
                     Comprar
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
