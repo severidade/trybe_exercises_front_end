@@ -1,5 +1,5 @@
 import React from 'react';
-import Products from './componentes/Procucts';
+import ProductsSlider from './componentes/ProductsSlider';
 import './App.css';
 
 class App extends React.Component {
@@ -7,7 +7,7 @@ class App extends React.Component {
     return (
       <>
        <h1>Bem dito</h1>
-       <Products />
+       <ProductsSlider />
       </>
     );
   }
