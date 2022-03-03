@@ -8,7 +8,7 @@ import './ProductsSlider.css';
 
 class Products extends Component {
 
-  jQuerycode = () =>{
+  slider = () =>{
     const liWidth = $("#slider_galery ol li").outerWidth();
     console.log(liWidth);
 
@@ -20,23 +20,28 @@ class Products extends Component {
 	  $("#prevbutton").click(function(e){
 	  	e.preventDefault();
 	  	$("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 1500, function(){
-	  		$("#slider_galery ol li").last().after($("#slider_galery ol li").first());
+        $("#slider_galery ol li").last().after($("#slider_galery ol li").first());
 	  		$(this).css({'left':'0', 'width': liWidth});
+        $("#slider_galery ol li").first().addClass("highlight");
+        
 	  	});
 	  });
 
     //Voltar
     $("#nextbutton").click(function(e){
       e.preventDefault();
-      $("#slider_galery ol li").first().before($('#slider_galery ol li').last());
-      
+      $("#slider_galery ol li").first().before($('#slider_galery ol li').last()); 
 
+      $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 1500, function(){
+        $(this).css({'left': '0', 'width': liWidth, 'margin-left': '0'});
+        $("#slider_galery ol li").first().addClass("highlight");
+      });
 	  });
 
   }
 
   componentDidMount (){
-    this.jQuerycode();
+    this.slider();
   }
 
   render() {
@@ -81,7 +86,6 @@ class Products extends Component {
                   </a>
                 </div>
               </div>
-
               <div className="picture_product">
                 <div className="img_product_conteiner">
                   <img className="fundo" src={`${item.model}`} alt={`fundo ${item.product} `} />
@@ -93,7 +97,6 @@ class Products extends Component {
             </li>
           ))}
         </ol>
-        
       </div>
     )
   }
