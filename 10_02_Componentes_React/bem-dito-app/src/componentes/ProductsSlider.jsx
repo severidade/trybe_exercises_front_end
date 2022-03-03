@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
 import producs from '../dados/producs_from_slider';
 import './ProductsSlider.css';
 
@@ -6,9 +7,20 @@ import './ProductsSlider.css';
 
 
 class Products extends Component {
+  jQuerycode = () =>{
+    $(".button").click(function(){
+      $('h1').toggleClass( "highlight" );
+    });
+  }
+
+  componentDidMount (){
+    this.jQuerycode()
+  }
+
   render() {
     return (
       <div className='hero'>
+        
         <div class="nav_slider">
           <a href="https://severidade.github.io/" class="prev_slider_button">
             <svg class="prev_icon" width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -31,6 +43,7 @@ class Products extends Component {
                   <h3 className="product_line"> {` ${item.product_line} `} </h3>
                   <h1 className="product_name"> {` ${item.product} `} </h1>
                   <h2 className="price">{` R$ ${item.price} `} </h2>
+                  <button className="button">clicar</button>
                 </div>
                 <div className="main-content">
                   <div className="highlight_info"> {` ${item.highlight_info}`} </div>
@@ -58,6 +71,7 @@ class Products extends Component {
             </li>
           ))}
         </ol>
+        
       </div>
     )
   }

@@ -19,6 +19,14 @@
   line-height: 0.8em;
 }
 
+.highlight {
+  background-color: tomato;
+  transform: translateX(30%);
+  
+}
+h1 {
+  transition: all 1s;
+}
 .price {
   font-family: var(--italic-font);
   font-size: 30px;
