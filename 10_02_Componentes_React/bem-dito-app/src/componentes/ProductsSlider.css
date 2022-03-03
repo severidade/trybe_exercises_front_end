@@ -1,3 +1,7 @@
+#slider_galery {
+  overflow: hidden;
+}
+
 .hero:before {
   content: "";
   width: 50%;
@@ -87,7 +91,7 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
-a[class$="slider_button"] {
+div[class$="slider_button"] {
   width: 70px;
   height: 70px;
   margin: 20px;
@@ -96,6 +100,7 @@ a[class$="slider_button"] {
   align-items: center;
   border-radius: 100%;
   border: solid 2px black;
+  cursor: pointer;
 }
 
 .prev_icon , .next_icon {
