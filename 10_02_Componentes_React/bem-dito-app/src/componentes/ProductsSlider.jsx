@@ -18,26 +18,33 @@ class Products extends Component {
 
     //proximo
 	  $("#prevbutton").click(function(e){
-	  	e.preventDefault();
 
+	  	e.preventDefault();
+      // adiciona a calsse ativo ao segundo li
       $("#slider_galery ol li:eq(1)").addClass("highlight");
+      
 
       $("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 1500, function(){
-        $("#slider_galery ol li").last().after($("#slider_galery ol li").first().removeClass("highlight"));
+        $("#slider_galery ol li").last().after($("#slider_galery ol li").first());
         $(this).css({'left':'0', 'width': liWidth});
-        
-        $("#slider_galery ol li").first().addClass("highlight");
+
+        //remove a classe ativo do ultimo li
+        $("#slider_galery ol li").last().removeClass("highlight");
       });
 	  });
 
     //Voltar
     $("#nextbutton").click(function(e){
       e.preventDefault();
+      $("#slider_galery ol li").last().addClass("highlight");
+
       $("#slider_galery ol li").first().before($('#slider_galery ol li').last()); 
 
       $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 1500, function(){
         $(this).css({'left': '0', 'width': liWidth, 'margin-left': '0'});
-        // $("#slider_galery ol li").first().addClass("highlight");
+        
+      // remove a calsse ativo ao segundo li
+      $("#slider_galery ol li:eq(1)").removeClass("highlight");
       });
 	  });
 
