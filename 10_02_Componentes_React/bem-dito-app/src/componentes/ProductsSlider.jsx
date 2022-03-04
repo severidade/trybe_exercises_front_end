@@ -24,7 +24,7 @@ class Products extends Component {
       // $("#slider_galery ol li:eq(1)").addClass("highlight");
       
 
-      $("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 0, function(){
+      $("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 1500, function(){
         $("#slider_galery ol li:eq(1)").addClass("highlight");
         $("#slider_galery ol li").last().after($("#slider_galery ol li").first());
         $(this).css({'left':'0', 'width': liWidth});
@@ -43,7 +43,7 @@ class Products extends Component {
 
       // $("#slider_galery ol li:eq(0)").addClass("highlight");
       
-      $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 0, function(){
+      $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 1500, function(){
         $("#slider_galery ol li:eq(0)").addClass("highlight");
         $(this).css({'left': '0', 'width': liWidth, 'margin-left': '0'});
         
@@ -84,7 +84,6 @@ class Products extends Component {
                   <h3 className="product_line"> {` ${item.product_line} `} </h3>
                   <h1 className="product_name"> {` ${item.product} `} </h1>
                   <h2 className="price">{` R$ ${item.price} `} </h2>
-                  <button className="button">clicar</button>
                 </div>
                 <div className="main-content">
                   <div className="highlight_info"> {` ${item.highlight_info}`} </div>

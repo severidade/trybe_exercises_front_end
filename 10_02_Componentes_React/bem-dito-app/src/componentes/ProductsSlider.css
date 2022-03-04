@@ -113,7 +113,7 @@ li[class^="product"] {
   align-content: center;
   position: relative;
   background-color: yellow;
-  transition: 500ms;
+  transition: background ease-in 1000ms;
   /* transition-delay: 100ms; */
 }
 li[class^="product"].highlight{
@@ -159,15 +159,16 @@ li[class^="product"].highlight{
   border-radius: 186px 186px 60px 60px;
   object-position: 50%;
   transform: translateX(-50%);
-  transition: ease-in ;
+  /* transition: ease-in ;
   transition-duration: 1s;
-  transition-delay: 1s;
+  transition-delay: 1s; */
+  transition: object-position ease-in 1000ms;
 }
 
 li[class^="product"].highlight img.fundo{
   /* background-color: turquoise;
   border-radius: 0; */
-  object-position: 30%;
+  object-position: 40%;
 }
 
 .img_product_conteiner .produto {
