@@ -19,12 +19,15 @@ class Products extends Component {
     //proximo
 	  $("#prevbutton").click(function(e){
 	  	e.preventDefault();
-	  	$("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 1500, function(){
-        $("#slider_galery ol li").last().after($("#slider_galery ol li").first());
-	  		$(this).css({'left':'0', 'width': liWidth});
-        $("#slider_galery ol li").first().addClass("highlight");
+
+      $("#slider_galery ol li:eq(1)").addClass("highlight");
+
+      $("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 1500, function(){
+        $("#slider_galery ol li").last().after($("#slider_galery ol li").first().removeClass("highlight"));
+        $(this).css({'left':'0', 'width': liWidth});
         
-	  	});
+        $("#slider_galery ol li").first().addClass("highlight");
+      });
 	  });
 
     //Voltar
@@ -34,7 +37,7 @@ class Products extends Component {
 
       $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 1500, function(){
         $(this).css({'left': '0', 'width': liWidth, 'margin-left': '0'});
-        $("#slider_galery ol li").first().addClass("highlight");
+        // $("#slider_galery ol li").first().addClass("highlight");
       });
 	  });
 
