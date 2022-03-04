@@ -16,15 +16,16 @@ class Products extends Component {
       $('h1').toggleClass( "highlight" );
     });
 
-    //proximo
+    //proximo <
 	  $("#prevbutton").click(function(e){
 
 	  	e.preventDefault();
       // adiciona a calsse ativo ao segundo li
-      $("#slider_galery ol li:eq(1)").addClass("highlight");
+      // $("#slider_galery ol li:eq(1)").addClass("highlight");
       
 
-      $("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 1500, function(){
+      $("#slider_galery ol").css({'width':'99999%'}).animate({'left':-liWidth }, 0, function(){
+        $("#slider_galery ol li:eq(1)").addClass("highlight");
         $("#slider_galery ol li").last().after($("#slider_galery ol li").first());
         $(this).css({'left':'0', 'width': liWidth});
 
@@ -33,14 +34,17 @@ class Products extends Component {
       });
 	  });
 
-    //Voltar
+    //Voltar>
     $("#nextbutton").click(function(e){
       e.preventDefault();
-      $("#slider_galery ol li").last().addClass("highlight");
+      // $("#slider_galery ol li").last().addClass("highlight");
 
-      $("#slider_galery ol li").first().before($('#slider_galery ol li').last()); 
+      $("#slider_galery ol li").first().before($('#slider_galery ol li').last());
 
-      $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 1500, function(){
+      // $("#slider_galery ol li:eq(0)").addClass("highlight");
+      
+      $("#slider_galery ol").css({'width': '99999%', 'margin-left': -liWidth}).animate({left:liWidth}, 0, function(){
+        $("#slider_galery ol li:eq(0)").addClass("highlight");
         $(this).css({'left': '0', 'width': liWidth, 'margin-left': '0'});
         
       // remove a calsse ativo ao segundo li
