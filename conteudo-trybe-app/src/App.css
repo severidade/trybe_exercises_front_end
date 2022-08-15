@@ -33,6 +33,10 @@
   justify-content: center;
 }
 
+div.card:target {
+  border: solid 6px blue;
+}
+
 footer {
   background: rgb(51, 51, 51);
   color: white;
