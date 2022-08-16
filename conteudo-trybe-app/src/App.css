@@ -33,8 +33,14 @@
   justify-content: center;
 }
 
+div.card:not(:target) {
+  opacity: 0.5;
+}
+
 div.card:target {
   border: solid 6px blue;
+  opacity: 1;
+  transition: 0.15s ease-in-out;
 }
 
 footer {
