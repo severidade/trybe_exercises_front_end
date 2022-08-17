@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+.menuSuperior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .title {
   width: 100%;
@@ -41,6 +46,7 @@ div.card:target {
   border: solid 6px blue;
   opacity: 1;
   transition: 0.15s ease-in-out;
+  transform: translate(0px, -50px);
 }
 
 footer {
