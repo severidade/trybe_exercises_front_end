@@ -12,7 +12,7 @@ class App extends React.Component {
     return (
       <article>
         <AlbumList albumsList={ albums } />
-        <UserProfile user={ users[1] }/>
+        <UserProfile userList={ users }/>
       </article>
     );
   }

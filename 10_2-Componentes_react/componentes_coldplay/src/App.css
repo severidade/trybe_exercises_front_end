@@ -73,6 +73,12 @@ article {
   align-self: flex-end;
 }
 
+.user > .conteiner_image {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 100%;
+}
 .conteiner_image > img {
   width: 100%;
   height: 100%;
