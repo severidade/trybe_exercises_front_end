@@ -27,7 +27,7 @@ h1 {
     font-weight: 200;
     text-transform: uppercase;
     font-size: 50px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -46,7 +46,7 @@ article {
   flex-wrap: wrap;
   gap: 40px;
 }
-.conteinerAlbumList {
+.conteinerAlbumList, .containerUsuario {
   width: 100%;
 }
 
