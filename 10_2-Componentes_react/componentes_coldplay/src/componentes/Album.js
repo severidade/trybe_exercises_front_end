@@ -1,18 +1,19 @@
+// /src/components/Album.js
 import React from 'react';
 
 class Album extends React.Component {
   render() {
     return (
       <section>
-        <img src={ this.props.album.image } alt={ this.props.album.title } />
-        <h2>{ this.props.album.title }</h2>
-        <p>{ this.props.album.releaseDate.year }</p>
+        <img src={ this.props.albu.image } alt={ this.props.albu.title } />
+        <h2>{ this.props.albu.title }</h2>
+        <p>{ this.props.albu.releaseDate.year }</p>
         <p>
           Lançamento:
-          { `${ this.props.album.releaseDate.day }/${ this.props.album.releaseDate.month }/${ this.props.album.releaseDate.year }` }
+          { `${ this.props.albu.releaseDate.day }/${ this.props.albu.releaseDate.month }/${ this.props.albu.releaseDate.year }` }
         </p>
-        <p>Gravadora: { this.props.album.others.recordCompany }</p>
-        <p>Formatos: { this.props.album.others.formats }</p>
+        <p>Gravadora: { this.props.albu.others.recordCompany }</p>
+        <p>Formatos: { this.props.albu.others.formats }</p>
       </section>
     );
   }
